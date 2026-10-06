@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "provider": "CleanBrowsing",
+  "website": "https://cleanbrowsing.org/",
+  "privacyPolicy": "https://cleanbrowsing.org/privacy",
+  "country": "US",
+  "servers": [
+    {
+      "id": "cleanbrowsing-adult",
+      "name": "CleanBrowsing (adult filter)",
+      "description": {
+        "en": "Blocks adult content and enforces safe search, but allows proxies and VPN sites."
+      },
+      "tags": [
+        "family"
+      ],
+      "filtering": "adult",
+      "logging": "unknown",
+      "v4": [
+        "185.228.168.10",
+        "185.228.169.11"
+      ],
+      "doh": "https://doh.cleanbrowsing.org/doh/adult-filter/"
+    },
+    {
+      "id": "cleanbrowsing-family",
+      "name": "CleanBrowsing (family filter)",
+      "description": {
+        "en": "Blocks adult content, proxies and VPN sites, and enforces safe search. Meant for homes with children."
+      },
+      "tags": [
+        "family",
+        "security"
+      ],
+      "filtering": "adult",
+      "logging": "unknown",
+      "v4": [
+        "185.228.168.168",
+        "185.228.169.168"
+      ],
+      "doh": "https://doh.cleanbrowsing.org/doh/family-filter/"
+    },
+    {
+      "id": "cleanbrowsing-security",
+      "name": "CleanBrowsing (security filter)",
+      "description": {
+        "en": "Blocks phishing, malware and malicious domains. Does not block adult content."
+      },
+      "tags": [
+        "security"
+      ],
+      "filtering": "malware",
+      "logging": "unknown",
+      "v4": [
+        "185.228.168.9",
+        "185.228.169.9"
+      ],
+      "doh": "https://doh.cleanbrowsing.org/doh/security-filter/"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "provider": "Quad9",
+  "website": "https://quad9.net/",
+  "privacyPolicy": "https://quad9.net/privacy/policy/",
+  "country": "CH",
+  "servers": [
+    {
+      "id": "quad9",
+      "name": "Quad9 (malware blocking)",
+      "description": {
+        "en": "Non-profit resolver based in Switzerland that blocks domains known to be malicious. Does not store your IP address."
+      },
+      "tags": [
+        "security",
+        "privacy"
+      ],
+      "filtering": "malware",
+      "logging": "minimal",
+      "v4": [
+        "9.9.9.9",
+        "149.112.112.112"
+      ],
+      "v6": [
+        "2620:fe::fe",
+        "2620:fe::9"
+      ],
+      "doh": "https://dns.quad9.net/dns-query"
+    },
+    {
+      "id": "quad9-unfiltered",
+      "name": "Quad9 (no blocking)",
+      "description": {
+        "en": "Quad9's privacy protections without the malware blocking. Use it when a legitimate site is blocked by the default Quad9 service."
+      },
+      "tags": [
+        "privacy",
+        "unfiltered"
+      ],
+      "filtering": "none",
+      "logging": "minimal",
+      "v4": [
+        "9.9.9.10",
+        "149.112.112.10"
+      ],
+      "v6": [
+        "2620:fe::10",
+        "2620:fe::fe:10"
+      ],
+      "doh": "https://dns10.quad9.net/dns-query"
+    }
+  ]
+}

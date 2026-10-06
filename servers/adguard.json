@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "provider": "AdGuard",
+  "website": "https://adguard-dns.io/",
+  "privacyPolicy": "https://adguard-dns.io/en/privacy.html",
+  "country": "CY",
+  "servers": [
+    {
+      "id": "adguard",
+      "name": "AdGuard DNS (ad and tracker blocking)",
+      "description": {
+        "en": "Blocks ads, trackers and malicious domains for every app on the PC, not only the browser."
+      },
+      "tags": [
+        "ad-blocking",
+        "privacy",
+        "security"
+      ],
+      "filtering": "ads",
+      "logging": "anonymized",
+      "v4": [
+        "94.140.14.14",
+        "94.140.15.15"
+      ],
+      "v6": [
+        "2a10:50c0::ad1:ff",
+        "2a10:50c0::ad2:ff"
+      ],
+      "doh": "https://dns.adguard-dns.com/dns-query"
+    },
+    {
+      "id": "adguard-family",
+      "name": "AdGuard DNS (family protection)",
+      "description": {
+        "en": "Everything the default AdGuard DNS blocks, plus adult content. Also enforces safe search in common search engines."
+      },
+      "tags": [
+        "family",
+        "ad-blocking"
+      ],
+      "filtering": "adult",
+      "logging": "anonymized",
+      "v4": [
+        "94.140.14.15",
+        "94.140.15.16"
+      ],
+      "v6": [
+        "2a10:50c0::bad1:ff",
+        "2a10:50c0::bad2:ff"
+      ],
+      "doh": "https://family.adguard-dns.com/dns-query"
+    },
+    {
+      "id": "adguard-unfiltered",
+      "name": "AdGuard DNS (no blocking)",
+      "description": {
+        "en": "AdGuard's resolver without any filtering. Use it when the default service blocks something you need."
+      },
+      "tags": [
+        "privacy",
+        "unfiltered"
+      ],
+      "filtering": "none",
+      "logging": "anonymized",
+      "v4": [
+        "94.140.14.140",
+        "94.140.14.141"
+      ],
+      "v6": [
+        "2a10:50c0::1:ff",
+        "2a10:50c0::2:ff"
+      ],
+      "doh": "https://unfiltered.adguard-dns.com/dns-query"
+    }
+  ]
+}

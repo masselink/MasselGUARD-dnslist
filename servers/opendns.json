@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "provider": "OpenDNS (Cisco)",
+  "website": "https://www.opendns.com/",
+  "privacyPolicy": "https://www.cisco.com/c/en/us/about/legal/privacy-full.html",
+  "country": "US",
+  "servers": [
+    {
+      "id": "opendns",
+      "name": "OpenDNS",
+      "description": {
+        "en": "Long-running resolver from Cisco that blocks known phishing and malware domains. Free accounts can add their own filtering rules."
+      },
+      "tags": [
+        "security"
+      ],
+      "filtering": "malware",
+      "logging": "unknown",
+      "v4": [
+        "208.67.222.222",
+        "208.67.220.220"
+      ],
+      "v6": [
+        "2620:119:35::35",
+        "2620:119:53::53"
+      ],
+      "doh": "https://doh.opendns.com/dns-query"
+    },
+    {
+      "id": "opendns-familyshield",
+      "name": "OpenDNS FamilyShield",
+      "description": {
+        "en": "Pre-configured filter that blocks adult content as well as malware and phishing. No account needed."
+      },
+      "tags": [
+        "family",
+        "security"
+      ],
+      "filtering": "adult",
+      "logging": "unknown",
+      "v4": [
+        "208.67.222.123",
+        "208.67.220.123"
+      ],
+      "doh": "https://doh.familyshield.opendns.com/dns-query"
+    }
+  ]
+}
