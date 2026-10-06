@@ -20,13 +20,15 @@
       "filtering": "custom",
       "logging": "configurable",
       "doh": "https://dns.nextdns.io/CONFIG_ID",
-      "requiresInput": {
-        "label": {
-          "en": "Your NextDNS configuration id"
-        },
-        "placeholder": "abc123",
-        "token": "CONFIG_ID"
-      }
+      "parameters": [
+        {
+          "token": "CONFIG_ID",
+          "label": {
+            "en": "Your NextDNS configuration id"
+          },
+          "placeholder": "abc123"
+        }
+      ]
     }
   ]
 }
