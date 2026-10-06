@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "provider": "Google",
+  "website": "https://developers.google.com/speed/public-dns",
+  "privacyPolicy": "https://developers.google.com/speed/public-dns/privacy",
+  "country": "US",
+  "servers": [
+    {
+      "id": "google",
+      "name": "Google Public DNS",
+      "description": {
+        "en": "Very widely used, fast and reliable. Does not block anything, which makes it a common choice to get past a DNS ad-block for a moment."
+      },
+      "tags": [
+        "unfiltered"
+      ],
+      "filtering": "none",
+      "logging": "short-term",
+      "v4": [
+        "8.8.8.8",
+        "8.8.4.4"
+      ],
+      "v6": [
+        "2001:4860:4860::8888",
+        "2001:4860:4860::8844"
+      ],
+      "doh": "https://dns.google/dns-query"
+    }
+  ]
+}

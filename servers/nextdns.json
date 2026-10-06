@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "provider": "NextDNS",
+  "website": "https://nextdns.io/",
+  "privacyPolicy": "https://nextdns.io/privacy",
+  "country": "US",
+  "servers": [
+    {
+      "id": "nextdns",
+      "name": "NextDNS (your own configuration)",
+      "description": {
+        "en": "A resolver you configure yourself on nextdns.io: blocklists, parental controls, logging and more. You need a free account; the six-character configuration id is asked when you add it."
+      },
+      "tags": [
+        "customizable",
+        "ad-blocking",
+        "security",
+        "privacy"
+      ],
+      "filtering": "custom",
+      "logging": "configurable",
+      "doh": "https://dns.nextdns.io/CONFIG_ID",
+      "parameters": [
+        {
+          "token": "CONFIG_ID",
+          "label": {
+            "en": "Your NextDNS configuration id"
+          },
+          "placeholder": "abc123"
+        }
+      ]
+    }
+  ]
+}

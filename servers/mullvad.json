@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "provider": "Mullvad",
+  "website": "https://mullvad.net/",
+  "privacyPolicy": "https://mullvad.net/en/help/privacy-policy",
+  "country": "SE",
+  "servers": [
+    {
+      "id": "mullvad",
+      "name": "Mullvad DNS",
+      "description": {
+        "en": "Public resolver from the Swedish VPN provider. Does not block anything and states that it keeps no query logs. Answers encrypted (DoH) queries only."
+      },
+      "tags": [
+        "privacy",
+        "unfiltered"
+      ],
+      "filtering": "none",
+      "logging": "none",
+      "v4": [
+        "194.242.2.2"
+      ],
+      "v6": [
+        "2a07:e340::2"
+      ],
+      "encryptedOnly": true,
+      "doh": "https://dns.mullvad.net/dns-query"
+    },
+    {
+      "id": "mullvad-adblock",
+      "name": "Mullvad DNS (ad and tracker blocking)",
+      "description": {
+        "en": "Mullvad's resolver with ad and tracker blocking turned on. Answers encrypted (DoH) queries only."
+      },
+      "tags": [
+        "ad-blocking",
+        "privacy"
+      ],
+      "filtering": "ads",
+      "logging": "none",
+      "v4": [
+        "194.242.2.3"
+      ],
+      "v6": [
+        "2a07:e340::3"
+      ],
+      "encryptedOnly": true,
+      "doh": "https://adblock.dns.mullvad.net/dns-query"
+    }
+  ]
+}
