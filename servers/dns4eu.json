@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "provider": "DNS4EU",
+  "website": "https://www.joindns4.eu/",
+  "privacyPolicy": "https://www.joindns4.eu/privacy",
+  "servers": [
+    {
+      "id": "dns4eu-protective",
+      "name": "DNS4EU Protective",
+      "description": "European public resolver, funded by the EU. Blocks malware, phishing and command-and-control domains. Client IP addresses are anonymised before logging.",
+      "blocks": [
+        "malware"
+      ],
+      "logging": "anonymized",
+      "v4": [
+        "86.54.11.1",
+        "86.54.11.201"
+      ],
+      "v6": [
+        "2a13:1001::86:54:11:1",
+        "2a13:1001::86:54:11:201"
+      ],
+      "doh": "https://protective.joindns4.eu/dns-query"
+    },
+    {
+      "id": "dns4eu-child",
+      "name": "DNS4EU Protective and Child Protection",
+      "description": "Protective filtering plus content that is not appropriate for children.",
+      "blocks": [
+        "malware",
+        "adult"
+      ],
+      "logging": "anonymized",
+      "v4": [
+        "86.54.11.12",
+        "86.54.11.212"
+      ],
+      "v6": [
+        "2a13:1001::86:54:11:12",
+        "2a13:1001::86:54:11:212"
+      ],
+      "doh": "https://child.joindns4.eu/dns-query"
+    },
+    {
+      "id": "dns4eu-noads",
+      "name": "DNS4EU Protective and Ad Blocking",
+      "description": "Protective filtering plus advertising and tracking domains.",
+      "blocks": [
+        "malware",
+        "ads",
+        "trackers"
+      ],
+      "logging": "anonymized",
+      "v4": [
+        "86.54.11.13",
+        "86.54.11.213"
+      ],
+      "v6": [
+        "2a13:1001::86:54:11:13",
+        "2a13:1001::86:54:11:213"
+      ],
+      "doh": "https://noads.joindns4.eu/dns-query"
+    },
+    {
+      "id": "dns4eu-child-noads",
+      "name": "DNS4EU Protective, Child Protection and Ad Blocking",
+      "description": "All three filters combined.",
+      "blocks": [
+        "malware",
+        "adult",
+        "ads",
+        "trackers"
+      ],
+      "logging": "anonymized",
+      "v4": [
+        "86.54.11.11",
+        "86.54.11.211"
+      ],
+      "v6": [
+        "2a13:1001::86:54:11:11",
+        "2a13:1001::86:54:11:211"
+      ],
+      "doh": "https://child-noads.joindns4.eu/dns-query"
+    },
+    {
+      "id": "dns4eu-unfiltered",
+      "name": "DNS4EU Unfiltered",
+      "description": "No filtering (except domains blocked by court order).",
+      "blocks": [],
+      "logging": "anonymized",
+      "v4": [
+        "86.54.11.100",
+        "86.54.11.200"
+      ],
+      "v6": [
+        "2a13:1001::86:54:11:100",
+        "2a13:1001::86:54:11:200"
+      ],
+      "doh": "https://unfiltered.joindns4.eu/dns-query"
+    }
+  ]
+}

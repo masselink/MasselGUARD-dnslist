@@ -37,6 +37,88 @@
       ],
       "encryptedOnly": true,
       "doh": "https://adblock.dns.mullvad.net/dns-query"
+    },
+    {
+      "id": "mullvad-base",
+      "name": "Mullvad DNS Base",
+      "description": "Blocks ads, trackers and malware. Answers encrypted (DoH) queries only.",
+      "blocks": [
+        "ads",
+        "trackers",
+        "malware"
+      ],
+      "logging": "none",
+      "v4": [
+        "194.242.2.4"
+      ],
+      "v6": [
+        "2a07:e340::4"
+      ],
+      "encryptedOnly": true,
+      "doh": "https://base.dns.mullvad.net/dns-query"
+    },
+    {
+      "id": "mullvad-extended",
+      "name": "Mullvad DNS Extended",
+      "description": "Everything Base blocks, plus social media. Answers encrypted (DoH) queries only.",
+      "blocks": [
+        "ads",
+        "trackers",
+        "malware",
+        "social"
+      ],
+      "logging": "none",
+      "v4": [
+        "194.242.2.5"
+      ],
+      "v6": [
+        "2a07:e340::5"
+      ],
+      "encryptedOnly": true,
+      "doh": "https://extended.dns.mullvad.net/dns-query"
+    },
+    {
+      "id": "mullvad-family",
+      "name": "Mullvad DNS Family",
+      "description": "Blocks ads, trackers, malware, adult content and gambling. Answers encrypted (DoH) queries only.",
+      "blocks": [
+        "ads",
+        "trackers",
+        "malware",
+        "adult",
+        "gambling"
+      ],
+      "logging": "none",
+      "v4": [
+        "194.242.2.6"
+      ],
+      "v6": [
+        "2a07:e340::6"
+      ],
+      "encryptedOnly": true,
+      "doh": "https://family.dns.mullvad.net/dns-query"
+    },
+    {
+      "id": "mullvad-all",
+      "name": "Mullvad DNS All",
+      "description": "Blocks everything in the Family level plus social media. Answers encrypted (DoH) queries only.",
+      "blocks": [
+        "ads",
+        "trackers",
+        "malware",
+        "adult",
+        "gambling",
+        "social"
+      ],
+      "logging": "none",
+      "v4": [
+        "194.242.2.9"
+      ],
+      "v6": [
+        "2a07:e340::9"
+      ],
+      "encryptedOnly": true,
+      "doh": "https://all.dns.mullvad.net/dns-query"
     }
   ]
 }

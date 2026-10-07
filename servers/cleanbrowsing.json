@@ -8,7 +8,7 @@
     {
       "id": "cleanbrowsing-adult",
       "name": "CleanBrowsing Adult Filter",
-      "description": "Blocks adult content and enforces safe search, but allows proxies and VPN sites.",
+      "description": "Blocks adult, pornographic and explicit sites. Does not block proxies or VPNs.",
       "blocks": [
         "adult"
       ],
@@ -17,27 +17,35 @@
         "185.228.168.10",
         "185.228.169.11"
       ],
-      "doh": "https://doh.cleanbrowsing.org/doh/adult-filter/"
+      "doh": "https://doh.cleanbrowsing.org/doh/adult-filter/",
+      "v6": [
+        "2a0d:2a00:1::1",
+        "2a0d:2a00:2::1"
+      ]
     },
     {
       "id": "cleanbrowsing-family",
       "name": "CleanBrowsing Family Filter",
-      "description": "Blocks adult content, proxies and VPN sites, and enforces safe search. Meant for homes with children.",
+      "description": "Blocks adult, pornographic and explicit sites, and the proxy and VPN domains used to bypass the filter. Meant for homes with children.",
       "blocks": [
         "adult",
-        "malware"
+        "proxies"
       ],
       "logging": "unknown",
       "v4": [
         "185.228.168.168",
         "185.228.169.168"
       ],
-      "doh": "https://doh.cleanbrowsing.org/doh/family-filter/"
+      "doh": "https://doh.cleanbrowsing.org/doh/family-filter/",
+      "v6": [
+        "2a0d:2a00:1::",
+        "2a0d:2a00:2::"
+      ]
     },
     {
       "id": "cleanbrowsing-security",
       "name": "CleanBrowsing Security Filter",
-      "description": "Blocks phishing, malware and malicious domains. Does not block adult content.",
+      "description": "Blocks phishing, spam, malware and malicious domains. Does not block adult content.",
       "blocks": [
         "malware"
       ],
@@ -46,7 +54,11 @@
         "185.228.168.9",
         "185.228.169.9"
       ],
-      "doh": "https://doh.cleanbrowsing.org/doh/security-filter/"
+      "doh": "https://doh.cleanbrowsing.org/doh/security-filter/",
+      "v6": [
+        "2a0d:2a00:1::2",
+        "2a0d:2a00:2::2"
+      ]
     }
   ]
 }

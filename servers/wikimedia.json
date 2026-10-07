@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "provider": "Wikimedia Foundation",
+  "website": "https://meta.wikimedia.org/wiki/Wikimedia_DNS",
+  "country": "US",
+  "servers": [
+    {
+      "id": "wikimedia",
+      "name": "Wikimedia DNS",
+      "description": "Resolver run by the Wikimedia Foundation. Answers encrypted queries only and does not block anything. Still in beta: it currently logs nothing but has no formal privacy policy yet.",
+      "blocks": [],
+      "logging": "none",
+      "v4": [
+        "185.71.138.138"
+      ],
+      "v6": [
+        "2001:67c:930::1"
+      ],
+      "encryptedOnly": true,
+      "doh": "https://wikimedia-dns.org/dns-query"
+    }
+  ]
+}

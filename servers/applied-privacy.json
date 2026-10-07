@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "provider": "Applied Privacy",
+  "website": "https://applied-privacy.net/",
+  "country": "AT",
+  "servers": [
+    {
+      "id": "applied-privacy",
+      "name": "Applied Privacy DNS",
+      "description": "Resolver run by a non-profit foundation in Vienna. Answers encrypted queries only and does not block anything.",
+      "blocks": [],
+      "logging": "unknown",
+      "v4": [
+        "146.255.56.98"
+      ],
+      "v6": [
+        "2a02:1b8:10:234::2"
+      ],
+      "encryptedOnly": true,
+      "doh": "https://doh.applied-privacy.net/query"
+    }
+  ]
+}

@@ -3,12 +3,21 @@
   "version": "2026-10-07",
   "providers": [
     "adguard",
+    "applied-privacy",
+    "cira",
     "cleanbrowsing",
     "cloudflare",
+    "controld",
+    "dns-sb",
+    "dns4eu",
+    "ffmuc",
     "google",
+    "libredns",
     "mullvad",
     "nextdns",
     "opendns",
-    "quad9"
+    "quad9",
+    "uncensoreddns",
+    "wikimedia"
   ]
 }

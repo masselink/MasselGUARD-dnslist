@@ -7,7 +7,7 @@
   "servers": [
     {
       "id": "quad9",
-      "name": "Quad9 Secured",
+      "name": "Quad9 Recommended",
       "description": "Non-profit resolver based in Switzerland that blocks domains known to be malicious. Does not store your IP address.",
       "blocks": [
         "malware"
@@ -22,6 +22,24 @@
         "2620:fe::9"
       ],
       "doh": "https://dns.quad9.net/dns-query"
+    },
+    {
+      "id": "quad9-ecs",
+      "name": "Quad9 Secured with ECS",
+      "description": "Like the recommended service (malware blocking, DNSSEC) but passes part of your network address on (EDNS client subnet) so content networks can answer with a closer server.",
+      "blocks": [
+        "malware"
+      ],
+      "logging": "minimal",
+      "v4": [
+        "9.9.9.11",
+        "149.112.112.11"
+      ],
+      "v6": [
+        "2620:fe::11",
+        "2620:fe::fe:11"
+      ],
+      "doh": "https://dns11.quad9.net/dns-query"
     },
     {
       "id": "quad9-unfiltered",

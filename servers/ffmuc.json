@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "provider": "Freifunk Munchen",
+  "website": "https://ffmuc.net/",
+  "country": "DE",
+  "servers": [
+    {
+      "id": "ffmuc",
+      "name": "FFMUC DNS",
+      "description": "Resolver of the Freifunk community network in Munich with DNSSEC. Does not block anything. States that it keeps no logs that reveal what individual users do.",
+      "blocks": [],
+      "logging": "minimal",
+      "v4": [
+        "5.1.66.255",
+        "185.150.99.255"
+      ],
+      "v6": [
+        "2001:678:e68:f000::",
+        "2001:678:ed0:f000::"
+      ],
+      "doh": "https://doh.ffmuc.net/dns-query"
+    }
+  ]
+}

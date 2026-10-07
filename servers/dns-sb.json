@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "provider": "DNS.SB",
+  "website": "https://dns.sb/",
+  "privacyPolicy": "https://dns.sb/privacy/",
+  "servers": [
+    {
+      "id": "dns-sb",
+      "name": "DNS.SB",
+      "description": "Public resolver with DNSSEC that does not block anything. States that it does not log DNS queries or IP addresses.",
+      "blocks": [],
+      "logging": "none",
+      "v4": [
+        "185.222.222.222",
+        "45.11.45.11"
+      ],
+      "v6": [
+        "2a09::",
+        "2a11::"
+      ],
+      "doh": "https://doh.dns.sb/dns-query"
+    }
+  ]
+}

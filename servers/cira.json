@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "provider": "CIRA Canadian Shield",
+  "website": "https://www.cira.ca/en/canadian-shield/",
+  "country": "CA",
+  "servers": [
+    {
+      "id": "cira-private",
+      "name": "CIRA Canadian Shield Private",
+      "description": "Resolver run by the Canadian Internet Registration Authority. Resolution only, no filtering.",
+      "blocks": [],
+      "logging": "unknown",
+      "v4": [
+        "149.112.121.10",
+        "149.112.122.10"
+      ],
+      "v6": [
+        "2620:10a:80bb::10",
+        "2620:10a:80bc::10"
+      ],
+      "doh": "https://private.canadianshield.cira.ca/dns-query"
+    },
+    {
+      "id": "cira-protected",
+      "name": "CIRA Canadian Shield Protected",
+      "description": "Blocks malware and phishing.",
+      "blocks": [
+        "malware"
+      ],
+      "logging": "unknown",
+      "v4": [
+        "149.112.121.20",
+        "149.112.122.20"
+      ],
+      "v6": [
+        "2620:10a:80bb::20",
+        "2620:10a:80bc::20"
+      ],
+      "doh": "https://protected.canadianshield.cira.ca/dns-query"
+    },
+    {
+      "id": "cira-family",
+      "name": "CIRA Canadian Shield Family",
+      "description": "Blocks malware, phishing and pornographic content.",
+      "blocks": [
+        "malware",
+        "adult"
+      ],
+      "logging": "unknown",
+      "v4": [
+        "149.112.121.30",
+        "149.112.122.30"
+      ],
+      "v6": [
+        "2620:10a:80bb::30",
+        "2620:10a:80bc::30"
+      ],
+      "doh": "https://family.canadianshield.cira.ca/dns-query"
+    }
+  ]
+}

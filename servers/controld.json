@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "provider": "Control D",
+  "website": "https://controld.com/",
+  "privacyPolicy": "https://controld.com/privacy",
+  "country": "CA",
+  "servers": [
+    {
+      "id": "controld-unfiltered",
+      "name": "Control D Unfiltered",
+      "description": "Free resolver that blocks nothing. States that it stores no browsing history, timestamps or logs.",
+      "blocks": [],
+      "logging": "none",
+      "v4": [
+        "76.76.2.0",
+        "76.76.10.0"
+      ],
+      "v6": [
+        "2606:1a40::",
+        "2606:1a40:1::"
+      ],
+      "doh": "https://freedns.controld.com/p0"
+    },
+    {
+      "id": "controld-malware",
+      "name": "Control D Malware",
+      "description": "Blocks known malware domains.",
+      "blocks": [
+        "malware"
+      ],
+      "logging": "none",
+      "v4": [
+        "76.76.2.1",
+        "76.76.10.1"
+      ],
+      "v6": [
+        "2606:1a40::1",
+        "2606:1a40:1::1"
+      ],
+      "doh": "https://freedns.controld.com/p1"
+    },
+    {
+      "id": "controld-ads",
+      "name": "Control D Ads and Tracking",
+      "description": "Blocks malware, ads and trackers.",
+      "blocks": [
+        "malware",
+        "ads",
+        "trackers"
+      ],
+      "logging": "none",
+      "v4": [
+        "76.76.2.2",
+        "76.76.10.2"
+      ],
+      "v6": [
+        "2606:1a40::2",
+        "2606:1a40:1::2"
+      ],
+      "doh": "https://freedns.controld.com/p2"
+    },
+    {
+      "id": "controld-social",
+      "name": "Control D Social",
+      "description": "Blocks social media platforms.",
+      "blocks": [
+        "social"
+      ],
+      "logging": "none",
+      "v4": [
+        "76.76.2.3",
+        "76.76.10.3"
+      ],
+      "v6": [
+        "2606:1a40::3",
+        "2606:1a40:1::3"
+      ],
+      "doh": "https://freedns.controld.com/p3"
+    },
+    {
+      "id": "controld-family",
+      "name": "Control D Family Friendly",
+      "description": "Blocks malware, ads, trackers and adult content.",
+      "blocks": [
+        "malware",
+        "ads",
+        "trackers",
+        "adult"
+      ],
+      "logging": "none",
+      "v4": [
+        "76.76.2.4",
+        "76.76.10.4"
+      ],
+      "v6": [
+        "2606:1a40::4",
+        "2606:1a40:1::4"
+      ],
+      "doh": "https://freedns.controld.com/family"
+    },
+    {
+      "id": "controld-uncensored",
+      "name": "Control D Uncensored",
+      "description": "Blocks nothing and aims to unblock domains that are censored in some regions.",
+      "blocks": [],
+      "logging": "none",
+      "v4": [
+        "76.76.2.5",
+        "76.76.10.5"
+      ],
+      "v6": [
+        "2606:1a40::5",
+        "2606:1a40:1::5"
+      ],
+      "doh": "https://freedns.controld.com/uncensored"
+    }
+  ]
+}

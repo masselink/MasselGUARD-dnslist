@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "provider": "LibreDNS",
+  "website": "https://libredns.gr/",
+  "servers": [
+    {
+      "id": "libredns",
+      "name": "LibreDNS",
+      "description": "Small independent resolver that states it keeps no logs. Does not block anything.",
+      "blocks": [],
+      "logging": "none",
+      "v4": [
+        "116.202.176.26"
+      ],
+      "v6": [
+        "2a01:4f8:1c0c:8274::1"
+      ],
+      "doh": "https://doh.libredns.gr/dns-query"
+    }
+  ]
+}
