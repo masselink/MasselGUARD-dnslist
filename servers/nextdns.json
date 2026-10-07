@@ -7,27 +7,13 @@
   "servers": [
     {
       "id": "nextdns",
-      "name": "NextDNS (your own configuration)",
-      "description": {
-        "en": "A resolver you configure yourself on nextdns.io: blocklists, parental controls, logging and more. You need a free account; the six-character configuration id is asked when you add it."
-      },
-      "tags": [
-        "customizable",
-        "ad-blocking",
-        "security",
-        "privacy"
-      ],
-      "filtering": "custom",
+      "name": "NextDNS",
+      "description": "A resolver you configure yourself on nextdns.io: blocklists, parental controls, logging and more. You need a free account and fill in your configuration id.",
+      "blocks": [],
       "logging": "configurable",
       "doh": "https://dns.nextdns.io/CONFIG_ID",
       "parameters": [
-        {
-          "token": "CONFIG_ID",
-          "label": {
-            "en": "Your NextDNS configuration id"
-          },
-          "placeholder": "abc123"
-        }
+        "CONFIG_ID"
       ]
     }
   ]

@@ -7,15 +7,11 @@
   "servers": [
     {
       "id": "quad9",
-      "name": "Quad9 (malware blocking)",
-      "description": {
-        "en": "Non-profit resolver based in Switzerland that blocks domains known to be malicious. Does not store your IP address."
-      },
-      "tags": [
-        "security",
-        "privacy"
+      "name": "Quad9 Secured",
+      "description": "Non-profit resolver based in Switzerland that blocks domains known to be malicious. Does not store your IP address.",
+      "blocks": [
+        "malware"
       ],
-      "filtering": "malware",
       "logging": "minimal",
       "v4": [
         "9.9.9.9",
@@ -29,15 +25,9 @@
     },
     {
       "id": "quad9-unfiltered",
-      "name": "Quad9 (no blocking)",
-      "description": {
-        "en": "Quad9's privacy protections without the malware blocking. Use it when a legitimate site is blocked by the default Quad9 service."
-      },
-      "tags": [
-        "privacy",
-        "unfiltered"
-      ],
-      "filtering": "none",
+      "name": "Quad9 Unsecured",
+      "description": "Quad9's privacy protections without the malware blocking. Use it when a legitimate site is blocked by the default Quad9 service.",
+      "blocks": [],
       "logging": "minimal",
       "v4": [
         "9.9.9.10",

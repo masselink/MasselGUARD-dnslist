@@ -8,13 +8,8 @@
     {
       "id": "google",
       "name": "Google Public DNS",
-      "description": {
-        "en": "Very widely used, fast and reliable. Does not block anything, which makes it a common choice to get past a DNS ad-block for a moment."
-      },
-      "tags": [
-        "unfiltered"
-      ],
-      "filtering": "none",
+      "description": "Very widely used, fast and reliable. Does not block anything, which makes it a common choice to get past a DNS ad-block for a moment.",
+      "blocks": [],
       "logging": "short-term",
       "v4": [
         "8.8.8.8",

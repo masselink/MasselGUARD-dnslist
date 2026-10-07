@@ -7,14 +7,11 @@
   "servers": [
     {
       "id": "cleanbrowsing-adult",
-      "name": "CleanBrowsing (adult filter)",
-      "description": {
-        "en": "Blocks adult content and enforces safe search, but allows proxies and VPN sites."
-      },
-      "tags": [
-        "family"
+      "name": "CleanBrowsing Adult Filter",
+      "description": "Blocks adult content and enforces safe search, but allows proxies and VPN sites.",
+      "blocks": [
+        "adult"
       ],
-      "filtering": "adult",
       "logging": "unknown",
       "v4": [
         "185.228.168.10",
@@ -24,15 +21,12 @@
     },
     {
       "id": "cleanbrowsing-family",
-      "name": "CleanBrowsing (family filter)",
-      "description": {
-        "en": "Blocks adult content, proxies and VPN sites, and enforces safe search. Meant for homes with children."
-      },
-      "tags": [
-        "family",
-        "security"
+      "name": "CleanBrowsing Family Filter",
+      "description": "Blocks adult content, proxies and VPN sites, and enforces safe search. Meant for homes with children.",
+      "blocks": [
+        "adult",
+        "malware"
       ],
-      "filtering": "adult",
       "logging": "unknown",
       "v4": [
         "185.228.168.168",
@@ -42,14 +36,11 @@
     },
     {
       "id": "cleanbrowsing-security",
-      "name": "CleanBrowsing (security filter)",
-      "description": {
-        "en": "Blocks phishing, malware and malicious domains. Does not block adult content."
-      },
-      "tags": [
-        "security"
+      "name": "CleanBrowsing Security Filter",
+      "description": "Blocks phishing, malware and malicious domains. Does not block adult content.",
+      "blocks": [
+        "malware"
       ],
-      "filtering": "malware",
       "logging": "unknown",
       "v4": [
         "185.228.168.9",

@@ -7,14 +7,11 @@
   "servers": [
     {
       "id": "opendns",
-      "name": "OpenDNS",
-      "description": {
-        "en": "Long-running resolver from Cisco that blocks known phishing and malware domains. Free accounts can add their own filtering rules."
-      },
-      "tags": [
-        "security"
+      "name": "OpenDNS Home",
+      "description": "Long-running resolver from Cisco that blocks known phishing and malware domains. Free accounts can add their own filtering rules.",
+      "blocks": [
+        "malware"
       ],
-      "filtering": "malware",
       "logging": "unknown",
       "v4": [
         "208.67.222.222",
@@ -29,14 +26,11 @@
     {
       "id": "opendns-familyshield",
       "name": "OpenDNS FamilyShield",
-      "description": {
-        "en": "Pre-configured filter that blocks adult content as well as malware and phishing. No account needed."
-      },
-      "tags": [
-        "family",
-        "security"
+      "description": "Pre-configured filter that blocks adult content as well as malware and phishing. No account needed.",
+      "blocks": [
+        "malware",
+        "adult"
       ],
-      "filtering": "adult",
       "logging": "unknown",
       "v4": [
         "208.67.222.123",
